@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 
 * {
+  margin: 10px;
   box-sizing: border-box;
   outline: 0;
 }
@@ -10,13 +11,13 @@ body {
   padding: 0;
   font-size: 1.20em;
   line-height: 2em;
-  background-color: rgb(224, 217, 217);
+  background-color: #cbaa9dd5;
 }
 
 .container {
   max-width: 1500px;
   margin: 50px auto; /*centraliza o conteúdo*/
-  background: rgb(209, 204, 200);
+  background: #da937c36;
   padding: 20px;
   border-radius: 10px;
 }
@@ -25,16 +26,61 @@ body {
   align-items: center;
 }
 
+header {
+    background-image: url(../assets/capa.png);
+    background-repeat: round;
+    background-size: cover;
+    height:600px;
+}
+
+h1 {
+  color: #803F4E;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+h2 {
+  color: #a04f62;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+h3 {
+  color: #B56A7B;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  color: #42403F;
+  text-align: justify;
+  font-family: sans-serif;
+  font-size: 20px;
+  opacity: 1;
+}
+
 .titulo-plano-carreira {
-  flex-direction: column;
+  flex: content;
   gap: 0.5rem;
-  text-align: start;
+  text-align: initial;
+  font-size: 40px;
+}
+
+.audio {
+  align-self: end;
+}
+
+.fa-bars {
+color: #803F4E;
 }
 
 .menu-links {
+  display: flex;
   text-align: end;
 }
 
 .formulario-projeto {
   max-width: 600px;
+}
+
+.footer {
+  text-align: center;
 }
