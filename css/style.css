@@ -190,7 +190,12 @@ a:hover {
   justify-content: flex-end;
 }
 
-.footer {
+.fa-regular-p {
   text-align: center;
 }
+
+.footer, footer {
+  text-align: center;
+}
+
 
