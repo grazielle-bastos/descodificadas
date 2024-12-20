@@ -22,85 +22,91 @@
 <body>
 
   <header>
-    <nav id="desktop-nav">
-      <h3 style="text-align: center;">ATENÇÃO: SITE AINDA EM MANUTENÇÃO <br />
-        TRILHA 1 [DESCODIFICADAS] EM ANDAMENTO</h3>
-      <h1 class="titulo-plano-carreira"><i class="fa-solid fa-award"></i>Plano de Carreira</h1>
-      <div>
-
+    <section>
+      <div class="cabecalho">
+        <h1 class="titulo-plano-carreira"><i class="fa-solid fa-award"></i>Plano de Carreira</h1>
+        <!-- <i class="fa-solid fa-bars"></i> -->
         <nav class="menu-links">
-          <a href="./index.html">Página Inicial</a></li>
-          <a href="./sobre.html">Sobre</a></li>
-          <a href="./contato.html">Contato</a></li>
-          <i class="fa-solid fa-bars"></i>
+          <a class="button-menu" href="index.html">Página Inicial</a></li>
+          <a class="button-menu" href="sobre.html">Sobre</a></li>
+          <a class="button-menu" href="contato.html">Contato</a></li>
         </nav>
+        <!-- <audio class="audio" controls="controls">
+            <source src="../assets/clair-de-lune-suite-bergamasque-l-75-3rd-movement-claude-debussy-448s-11942.mp3"
+              type="audio/mp3" />
+          </audio> -->
       </div>
-    </nav>
+
+    </section>
   </header>
 
   <section class="container">
     <div class="objetivo-projeto">
 
       <section class="candidatura-equipe">
-        <h2>Faça parte deste ecossistema</h2>
+        <h2>Faça parte deste nosso ecossistema</h2>
+        </br>
         <pre>
         Fazemos parte da Trilha 1 do segundo semestre de 2024. 
 
-        Ficou interessado? <button onclick="window.open('https://descodificadas.com.br/', '_blank')" title="Visite o site das Descodificadas e fique por dentro">Candidate-se </button>
+        Ficou interessado? <button class="button" onclick="window.open('https://descodificadas.com.br/', '_blank')" title="Visite o site das Descodificadas e fique por dentro">Candidate-se </button>
       </pre>
 
-      </section>
+        <div class="container-map">
+          <div class="map">
+            <h2>Estude de casa, ou em qualquer lugar</h2>
+            <figure class="figure">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63044907.53296487!2d-51.31668!3d-15.324638!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2sBrasil!5e0!3m2!1spt-BR!2sbr!4v1729295358776!5m2!1spt-BR!2sbr"
+                width="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" allowpaymentrequest="Mapa do Brasil"
+                alt="Mapa do Brasil"></iframe>
+            </figure>
+          </div>
+        </div>
 
-      <div class="formulario-projeto">
-        <form action="/" id="formulario" method="GET">
-          <fieldset>
-            <h2>Participe você também. Preencha o formulário:</h2>
-            <label for="nome"> Nome</label><br />
-            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
-            <br /><br />
-            <label for="dataNascimento">Data de Nascimento</label><br />
-            <input type="date" id="dataNascimento" name="DataNascimento" placeholder="Digite a sua data de nascimento"
-              required>
-            <br /><br />
-            <label for="email">Digite o seu e-mail</label><br />
-            <input type="e-mail" id="email" name="email" placeholder="Digite o seu e-mail" required>
-            <br /><br />
-            <label for="genero">Gênero</label><br />
-            <input type="text" id="genero" name="genero" placeholder="Digite o seu gênero" required>
-            <br /><br />
-            <label for="celular">Celular com DDD</label><br />
-            <input type="tel" id="celular" name="celular" placeholder="Digite o seu celular" required>
-            <br /><br />
-            <label for="linkedin">URL do seu LinkedIn</label><br />
-            <input type="url" id="linkedin" name="linkedin" placeholder="Digite a url do seu LinkedIn">
-            <br /><br />
-            <label for="arquivo">Anexe o seu RG</label><br />
-            <input type="file" id="arquivo" name="arquivo" multiple required>
-            <br /><br />
-            <label for="comentarios">Defina seu nível de satisfação: <br />
-              Pouco satisfeito de 0 até 5
-              <input type="range" id="satisfacao" name="satisfacao" min="0" max="10">
-              Muito satisfeito de 6 até 10
-              <br />
-            </label><br />
-            <textarea>Digite aqui os seus comentários</textarea>
-            <br /><br />
-            <input type="image" src="../assets/degrau.ico" alt="icone ilustrativo" width="100">
-            <input type="submit" name="enviar" value="Enviar" />
-          </fieldset>
-          <br />
+        <div class="formulario-projeto">
+          <form action="/" id="formulario" method="GET">
+            <fieldset class="border-fieldset">
+              <h2>Participe você também. Preencha o formulário:</h2>
+              <label for="nome"> Nome</label><br />
+              <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
+              <br /><br />
+              <label for="dataNascimento">Data de Nascimento</label><br />
+              <input type="date" id="dataNascimento name=" DataNascimento" placeholder="Digite a sua data de nascimento"
+                required>
+              <br /><br />
+              <label for="email">Digite o seu e-mail</label><br />
+              <input type="e-mail" id="email" name="email" placeholder="Digite o seu e-mail" required>
+              <br /><br />
+              <label for="genero">Gênero</label><br />
+              <input type="text" id="genero" name="genero" placeholder="Digite o seu gênero" required>
+              <br /><br />
+              <label for="celular">Celular com DD</label><br />
+              <input type="tel" id="celular" name="celular" placeholder="Digite o seu celular" pattern="[0-9]*"
+                required>
+              <br /><br />
+              <label for="linkedin">URL do seu LinkedIn</label><br />
+              <input type="url" id="linkedin" name="linkedin" placeholder="Digite a url do seu LinkedIn">
+              <br /><br />
+              <!-- <label for="arquivo">Anexe o seu RG</label><br />
+              <input type="file" id="pesquisa" name="arquivo" multiple required>
+              <br /><br /> -->
+              <label for="comentarios">Defina seu nível de satisfação: <br />
+                Pouco satisfeito de 0 até 5
+                <input type="range" id="comentarios" name="satisfacao" min="0" max="10">
+                Muito satisfeito de 6 até 10
+                <br />
+              </label><br />
+              <textarea>Digite aqui os seus comentários</textarea>
+              <br /><br />
+              <input type="image" src="../assets/degrau.ico" alt="icone ilustrativo" width="100">
+              <input class="button" type="submit" name="enviar" value="Enviar" />
+            </fieldset>
+            <br />
 
-        </form>
-      </div>
-
-      <h2>Estude de casa, ou em qualquer lugar</h2>
-
-      <figure class="figure">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63044907.53296487!2d-51.31668!3d-15.324638!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2sBrasil!5e0!3m2!1spt-BR!2sbr!4v1729295358776!5m2!1spt-BR!2sbr"
-          width="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          allowpaymentrequest="Mapa do Brasil" alt="Mapa do Brasil"></iframe>
-      </figure>
+          </form>
+        </div>
 
     </div>
   </section>

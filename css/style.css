@@ -57,30 +57,140 @@ p {
   opacity: 1;
 }
 
+pre {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+/* .fa-bars {
+  align-items: start;
+  color: #803F4E;
+} */
+
 .titulo-plano-carreira {
-  flex: content;
-  gap: 0.5rem;
-  text-align: initial;
+  justify-content: initial;
   font-size: 40px;
-}
-
-.audio {
-  align-self: end;
-}
-
-.fa-bars {
-color: #803F4E;
 }
 
 .menu-links {
   display: flex;
-  text-align: end;
+  justify-content: flex-start;
+}
+
+.button-menu {
+  color: #42403F;
+  border: 1px solid rgba(128, 63, 78, 0.11);
+  padding: 5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Estilo ao passar o mouse */
+.button-menu:hover {
+  background-color: rgba(128, 63, 78, 0.2); /* Fundo levemente colorido ao passar o mouse */
+  color: #000; /* Muda a cor do texto ao passar o mouse */
+}
+
+#meuBotao {
+  color: #42403F;
+  border: 1px solid rgba(128, 63, 78, 0.11);
+  padding: 5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.mensagem {
+  text-align: center;
+  font-family:  'Nanum Gothic', sans-serif;
+}
+
+#mensagem {
+  text-align: center;
+  font-family:  sans-serif;
+}
+
+.audio {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .formulario-projeto {
   max-width: 600px;
 }
 
+.border-fieldset {
+  border: 2px solid rgba(240, 141, 141, 0.237); /* Exemplo de borda vermelha com 50% de opacidade */
+  padding: 10px; /* Adiciona um pouco de espaçamento interno */
+  border-radius: 5px; /* Opcional: arredonda os cantos da borda */
+  background-color: rgba(255, 255, 255, 0.401); /* Opcional: fundo com leve transparência */
+}
+
+#pesquisa  {
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: 525;
+  background-color: beige;
+}
+
+.button {
+  border-radius: 20px;
+  font-size: medium;
+  font-weight: 525;
+  background-color: beige;
+}
+
+.button:hover {
+  background-color: bisque;
+  border-radius: 20px;
+}
+
+a {
+  color: #42403F;
+  text-decoration: none;
+  font-weight: bold; 
+}
+
+a:hover {
+  background-color: rgba(255, 228, 196, 0.396);
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.objetivo-projeto {
+    display: flex;
+    flex-direction: column; /* ou row, dependendo do layout desejado */
+    align-items: center; /* ou flex-start, flex-end, dependendo de como você quer alinhar */
+    justify-content: center; /* para centralizar verticalmente */
+}
+
+.container-map {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  float: left;
+}
+
+.map {
+  width: 50%;
+}
+
+.formulario-projeto {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 .footer {
   text-align: center;
 }
+

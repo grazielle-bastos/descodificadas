@@ -23,34 +23,25 @@
 
   <header>
     <section>
-      <div>
-        <nav id="desktop-nav">
-
-          <h1 class="titulo-plano-carreira"><i class="fa-solid fa-award"></i>Plano de Carreira</h1>
-
-          <div>
-            <nav class="menu-links">
-              <a href="index.html">Página Inicial</a></li>
-              <a href="sobre.html">Sobre</a></li>
-              <a href="contato.html">Contato</a></li>
-              <i class="fa-solid fa-bars"></i>
-            </nav>
-          </div>
-
+      <div class="cabecalho">
+        <h1 class="titulo-plano-carreira"><i class="fa-solid fa-award"></i>Plano de Carreira</h1>
+        <!-- <i class="fa-solid fa-bars"></i> -->
+        <nav class="menu-links">
+          <a class="button-menu" href="index.html">Página Inicial</a></li>
+          <a class="button-menu" href="sobre.html">Sobre</a></li>
+          <a class="button-menu" href="contato.html">Contato</a></li>
         </nav>
-
+        <!-- <audio class="audio" controls="controls">
+            <source src="../assets/clair-de-lune-suite-bergamasque-l-75-3rd-movement-claude-debussy-448s-11942.mp3"
+              type="audio/mp3" />
+          </audio> -->
       </div>
-      </nav>
-      <audio class="audio" autoplay="autoplay" controls="controls">
-        <source src="../assets/clair-de-lune-suite-bergamasque-l-75-3rd-movement-claude-debussy-448s-11942.mp3"
-          type="audio/mp3" />
-      </audio>
+
     </section>
   </header>
 
-  <div class="objetivo-projeto">
-
-    <section class="container">
+  <section class="container">
+    <div class="objetivo-projeto">
       <p>Um guia com os passos para alcançar a desejada posição de Desenvolvedora</p>
       <form>
         <h2>O que encontrar neste espaço?</h2>
@@ -62,7 +53,8 @@
       </nav>
       <h2>Missão do projeto</h2>
       <p>A missão é tomar nota de todos os passos dados nos estudos para progredir no conhecimento técnico em
-        programação.</p>
+        programação. Saiba mais sobre este projeto na sessão<a href="/pages/sobre.html">➔ Sobre</a></p>
+      <br />
       <section class="iniciativas-projeto">
         <h2>Iniciativas</h2>
         <ul>
@@ -95,19 +87,23 @@
           </li>
         </ul>
 
-      </section>
+      </section><br />
       <section class="sugestoes-projeto">
         <h2>Sugestões ou Oportunidades?</h2>
         <p>Entre em contato por e-mail com as melhores ideias de atalhos neste processo de aprendizado, ou para saber
-          mais
-          sobre este projeto, e dê início ao seu Plano de Carreira.
+          mais sobre este projeto, e dê início ao seu Plano de Carreira.
         </p>
-        <button onclick="window.open('mailto:grazielle1101@gmail.com', '_blank')" title="Me envie um e-mail">Entre em
-          contato</button>
+        <button class="button" onclick="window.open('mailto:grazielle1101@gmail.com', '_blank')"
+          title="Me envie um e-mail">Entre em contato</button>
 
       </section>
-    </section>
+  </section>
 
+  </div>
+
+  <div class="mensagem">
+    <h2>Tenho uma mensagem pra você:</br><button id="meuBotao">Clique aqui</button> </h2>
+    <p id="mensagem" style="display: none;">Você vai realizar todos os seus sonhos! Acredite em você &#127808;</p></br>
   </div>
 
   <footer>
@@ -125,7 +121,7 @@
     <hr>
   </footer>
 
-  <script src="./js/script.js"></script>
+  <script src="../js/script.js"></script>
 
 </body>
 
